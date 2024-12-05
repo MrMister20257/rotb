@@ -40,6 +40,7 @@ header h1 {
   background-clip: text;
   color: transparent;
   cursor: default;
+  pointer-events: none;
 }
 header .rightHeaderContainer {
   justify-content: center;
@@ -162,8 +163,9 @@ main .videoContainer .blackBar {
   grid-row-end: 10;
   z-index: 2;
   height: 15vh;
-  transform: rotate(0);
+  transform: rotate(15deg);
   opacity: 0.8;
+  pointer-events: none;
 }
 .about .subcontentContainer {
   z-index: inherit;
