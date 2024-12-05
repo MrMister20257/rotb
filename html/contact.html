@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="language" content="german">
+    <meta name="rating" content="safe for kids">
+    <meta name="title" content="Norman Marin">
+    <meta name="description" content="Diese Seite behandelt das Thema Boombap">
+    <meta name="author" content="Norman Marin">
+    <meta name="copyright" content="Copyright 2024 by Norman Marin">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Friday, October 25th, 2024, 20:00 pm">
+    <link rel="stylesheet" href="/stylesheets/contact-style.css">
+    <script src="https://kit.fontawesome.com/23cc763232.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js"></script>
+    <title>CONTACT THE BOOMBAP</title>
+    <script>
+        window.onload = function() {
+            document.body.style.display = "block";
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="leftHeaderContainer"></div>
+        <div class="headerTitel">
+            <h1>return of the boombap</h1>
+        </div>
+        <div class="rightHeaderContainer">
+            <a href="./index.html" id="intelLink"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="mainContactContainer">
+            <section class="contactForm">
+                <form action="/index.html" method="get"> <!--method="get" wurde nur verwendet, um bei einem Absenden der Daten nicht im Jenseits zu landen.-->
+                    <fieldset>
+                        <legend>Kontaktformular</legend>
+                        <div class="formContent">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Max Mustermann" pattern="[A-Za-z]{2-20}" required>
+                        </div>
+                        <div class="formContent">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" name="email" id="email" placeholder="max-mustermann@musteremail.de" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </div>
+                        <div class="formContent">
+                            <label for="note">Deine Nachricht:</label>
+                            <textarea name="note" id="note" placeholder="Sag uns, was wir für dich tun können." required></textarea>
+                        </div>
+                        <input type="submit" value="Absenden">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="contact-footer">
+        <p><i class="fa-solid fa-copyright"></i> 2024 - by MrMister20257</p>
+        <!-- <div class="footerLinkContainer">
+            <a href="/html/impressum.html" target="_blank">Impressum</a>
+        </div> -->
+    </footer>
+</body>
+</html>

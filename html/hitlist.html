@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="language" content="german">
+    <meta name="rating" content="safe for kids">
+    <meta name="title" content="Norman Marin">
+    <meta name="description" content="Diese Seite behandelt das Thema Boombap">
+    <meta name="author" content="Norman Marin">
+    <meta name="copyright" content="Copyright 2024 by Norman Marin">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Friday, October 25th, 2024, 20:00 pm">
+    <link rel="stylesheet" href="/stylesheets/hitlist-style.css">
+    <script src="https://kit.fontawesome.com/23cc763232.js" crossorigin="anonymous"></script>
+    <script src="/scripts/hitlist.js"></script>
+    <title>ENJOY THE BOOMBAP</title>
+    <script>
+        window.onload = function() {
+            document.body.style.display = "block";
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="leftHeaderContainer"></div>
+        <div class="headerTitel">
+            <h1>return of the boombap</h1>
+        </div>
+        <div class="rightHeaderContainer">
+            <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="leftContainer"><i class="fa-solid fa-angles-left" onclick="rewind()"></i></div>
+            <img src="/pictures/tv.avif" alt="tv" class="toggleVideo" id="toggleVideo">
+            <video class="videoPlayer" id="videoPlayer"></video>  
+            <div class="rightContainer"><i class="fa-solid fa-angles-right" onclick="forward()"></i></div>
+        </div>
+    </main>
+    <footer>
+        <p><i class="fa-solid fa-copyright"></i> 2024 - by MrMister20257</p>
+        <div class="footerLinkContainer">
+            <a href="/html/impressum.html" target="_blank">Impressum</a>
+            <p>-</p>
+            <a href="/html/contact.html" target="_blank">Kontakt</a>
+        </div>
+    </footer>
+</body>
+</html>

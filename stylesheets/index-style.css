@@ -1,0 +1,911 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Cherry+Bomb+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+header {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10dvh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 10px 25px rgb(255, 0, 0);
+  animation-name: boxshadow;
+  animation-duration: 1.2121s;
+  animation-iteration-count: infinite;
+}
+header .leftHeaderContainer,
+header .rightHeaderContainer {
+  height: 100%;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headerTitle {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  background-image: url(/pictures/architecture-2893844.avif);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  background-clip: text;
+  color: transparent;
+  cursor: default;
+}
+header .rightHeaderContainer {
+  justify-content: center;
+}
+header .rightHeaderContainer .controlPanel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .rightHeaderContainer .controlPanel button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  opacity: 0.2;
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+header .rightHeaderContainer .controlPanel button:hover {
+  opacity: 1;
+  color: red;
+}
+
+/* @import 'contact_main'; */
+main {
+  scroll-snap-align: center;
+  height: 100dvh;
+  width: 100%;
+  padding-top: 10dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .videoContainer {
+  height: 90dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .videoContainer video {
+  position: fixed;
+  top: 0px;
+  z-index: 0;
+  opacity: 0.5;
+  filter: blur(4px);
+}
+main .videoContainer .character {
+  z-index: 1;
+  height: 90dvh;
+  opacity: 1;
+}
+main .videoContainer a {
+  z-index: 1;
+  height: 15dvh;
+  width: 25rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  box-shadow: 0px 0px 5px rgb(255, 0, 0);
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+main .videoContainer a .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: grayscale(1) sepia(0.1);
+}
+main .videoContainer a .container h2 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  transition: all 0.3s ease;
+}
+main .videoContainer a:hover {
+  scale: 1.05;
+  background-color: transparent;
+  background: url(/pictures/graffiti-5950019_1920.avif);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 20px rgb(255, 0, 0);
+}
+main .videoContainer a:hover h2 {
+  color: red;
+  text-shadow: 2px 2px 4px black;
+}
+main .videoContainer .blackBar {
+  height: 10dvh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.about {
+  scroll-snap-align: center;
+  height: 100dvh;
+  z-index: 1;
+  padding-top: 10dvh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-color: #001058;
+  align-content: center;
+  justify-items: center;
+}
+.about img {
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  z-index: 2;
+  height: 15dvh;
+  transform: rotate(0);
+  opacity: 0.8;
+}
+.about .subcontentContainer {
+  z-index: inherit;
+  color: white;
+  text-align: center;
+  padding: 0.3rem;
+  cursor: default;
+  text-shadow: 2px 2px 3px black;
+}
+.about .subcontentContainer h2 {
+  font-size: 2.6rem;
+}
+.about .subcontentContainer p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.about .boombap {
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 9;
+  border-top: 1px solid rgba(255, 0, 0, 0.377);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+  padding: 1rem;
+}
+.about .eastcoast {
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  border-right: 1px solid rgba(255, 0, 0, 0.377);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+  padding: 1rem;
+}
+.about .westcoast {
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  border-left: 1px solid rgba(255, 0, 0, 0.377);
+  border-top: 1px solid rgba(255, 0, 0, 0.377);
+  padding: 1rem;
+}
+
+footer {
+  height: 12dvh;
+  width: 100%;
+  z-index: 1;
+  transform: rotate(0deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: "Nunito Sans";
+  position: absolute;
+  bottom: -100dvh;
+  cursor: default;
+}
+footer .footerLinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+footer a:hover {
+  color: red;
+}
+
+/* @import 'contact_footer'; */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Cherry Bomb One", "Nunito Sans", "Roboto", sans-serif;
+  font-size: 16px;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  scrollbar-color: red black;
+  scrollbar-width: thin;
+}
+
+body {
+  height: 100dvh;
+  background-color: rgb(0, 0, 0);
+  display: none;
+}
+
+@keyframes boxshadow {
+  0% {
+    box-shadow: 0px 10px 25px rgb(255, 0, 0);
+  }
+  49% {
+    box-shadow: 0px 10px 25px rgba(255, 0, 0, 0.671);
+  }
+  50% {
+    box-shadow: 0px 10px 25px rgba(255, 0, 0, 0.671);
+  }
+  99% {
+    box-shadow: 0px 10px 25px rgb(255, 0, 0);
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  header h1 {
+    font-size: 6rem;
+  }
+  header .rightHeaderContainer .controlPanel button {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    opacity: 0.6;
+  }
+  header .rightHeaderContainer .controlPanel .mute_btn {
+    display: inherit;
+  }
+  main .videoContainer video {
+    display: inherit;
+  }
+  main .videoContainer .character {
+    width: 28%;
+    height: auto;
+  }
+  main .videoContainer {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .videoContainer a {
+    z-index: 1;
+    height: 15%;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px rgb(255, 0, 0);
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer a .container h2 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer .blackBar {
+    height: 25dvh;
+  }
+  .about {
+    scroll-snap-align: center;
+    height: 100dvh;
+    z-index: 1;
+    padding-top: 10dvh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #001058;
+    align-content: center;
+    justify-items: center;
+  }
+  .about .eastcoast {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    padding: 1rem;
+    border-right: 1px solid rgba(255, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+  }
+  .about .westcoast {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    padding: 1rem;
+    border-left: 1px solid rgba(255, 0, 0, 0.377);
+    border-top: 1px solid rgba(255, 0, 0, 0.377);
+  }
+  .about .boombap {
+    padding: 1rem;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    border-top: 1px solid rgba(255, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+  }
+  .about .subcontentContainer h2 {
+    font-size: 2rem;
+  }
+  .about .subcontentContainer p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  footer .footerLinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .about img {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    z-index: 2;
+    height: 20dvh;
+    transform: rotate(0);
+    opacity: 0.8;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  header .rightHeaderContainer .controlPanel button {
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    opacity: 0.6;
+  }
+  header .rightHeaderContainer .controlPanel .mute_btn {
+    display: inherit;
+  }
+  main .videoContainer video {
+    display: inherit;
+  }
+  main .videoContainer .character {
+    width: 30%;
+    height: auto;
+  }
+  main .videoContainer {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .videoContainer a {
+    z-index: 1;
+    height: 15%;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px rgb(255, 0, 0);
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer a .container h2 {
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer .blackBar {
+    height: 25dvh;
+  }
+  .about {
+    scroll-snap-align: center;
+    height: 100dvh;
+    z-index: 1;
+    padding-top: 10dvh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #001058;
+    align-content: center;
+    justify-items: center;
+  }
+  .about .eastcoast {
+    display: inherit;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 9;
+    border: none;
+    padding: 1rem;
+  }
+  .about .westcoast {
+    display: inherit;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 9;
+    border: none;
+    padding: 1rem;
+  }
+  .about .boombap {
+    padding: 1rem;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    border-top: 1px solid rgba(255, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+    border: none;
+  }
+  .about .subcontentContainer h2 {
+    font-size: 2rem;
+  }
+  .about .subcontentContainer p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  footer .footerLinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .about img {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    z-index: 2;
+    height: 20dvh;
+    transform: rotate(0);
+    opacity: 0.8;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  header .rightHeaderContainer .controlPanel button {
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    opacity: 0.6;
+  }
+  header .rightHeaderContainer .controlPanel .mute_btn {
+    display: inherit;
+  }
+  main .videoContainer video {
+    display: inherit;
+  }
+  main .videoContainer .character {
+    width: 30%;
+    height: auto;
+  }
+  main .videoContainer {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .videoContainer a {
+    z-index: 1;
+    height: 15%;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px rgb(255, 0, 0);
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer a .container h2 {
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer .blackBar {
+    height: 25dvh;
+  }
+  .about {
+    scroll-snap-align: center;
+    height: 100dvh;
+    z-index: 1;
+    padding-top: 10dvh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #001058;
+    align-content: center;
+    justify-items: center;
+  }
+  .about .eastcoast {
+    display: inherit;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    border: none;
+    padding: 1rem;
+  }
+  .about .westcoast {
+    display: inherit;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    border: none;
+    padding: 1rem;
+  }
+  .about .boombap {
+    padding: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-top: 1px solid rgba(255, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+    border: none;
+  }
+  .about .subcontentContainer h2 {
+    font-size: 2rem;
+  }
+  .about .subcontentContainer p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  footer .footerLinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .about img {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    z-index: 2;
+    height: 10dvh;
+    transform: rotate(0);
+    opacity: 0.8;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  header .rightHeaderContainer .controlPanel button {
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    opacity: 0.6;
+  }
+  header .rightHeaderContainer .controlPanel .mute_btn {
+    display: none;
+  }
+  main .videoContainer video {
+    display: inherit;
+  }
+  main .videoContainer .character {
+    width: 50%;
+    height: auto;
+  }
+  main .videoContainer {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .videoContainer a {
+    z-index: 1;
+    height: 30%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px rgb(255, 0, 0);
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer a .container h2 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer .blackBar {
+    display: none;
+  }
+  .about .eastcoast {
+    display: none;
+  }
+  .about .westcoast {
+    display: none;
+  }
+  .about .boombap {
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    border-top: 1px solid rgba(255, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+  }
+  .about .subcontentContainer h2 {
+    font-size: 2rem;
+  }
+  .about .subcontentContainer p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  footer .footerLinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .about img {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    z-index: 2;
+    height: 10dvh;
+    transform: rotate(0);
+    opacity: 0.8;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  header .rightHeaderContainer .controlPanel button {
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    opacity: 0.6;
+  }
+  header .rightHeaderContainer .controlPanel .mute_btn {
+    display: none;
+  }
+  main .videoContainer video {
+    display: inherit;
+  }
+  main .videoContainer .character {
+    width: 50%;
+    height: auto;
+  }
+  main .videoContainer {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .videoContainer a {
+    z-index: 1;
+    height: 30%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px rgb(255, 0, 0);
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer a .container h2 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer .blackBar {
+    display: none;
+  }
+  .about {
+    scroll-snap-align: center;
+    height: 100dvh;
+    z-index: 1;
+    padding-top: 10dvh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #000000;
+    align-content: center;
+    justify-items: center;
+  }
+  .about .eastcoast {
+    display: none;
+  }
+  .about .westcoast {
+    display: none;
+  }
+  .about .boombap {
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    border-top: 1px solid rgba(255, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+  }
+  .about .subcontentContainer h2 {
+    font-size: 2rem;
+  }
+  .about .subcontentContainer p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  footer .footerLinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .about img {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    z-index: 2;
+    height: 10dvh;
+    transform: rotate(0);
+    opacity: 0.8;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+  header h1 {
+    font-size: 1.2rem;
+  }
+  header .rightHeaderContainer .controlPanel button {
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    opacity: 0.6;
+  }
+  header .rightHeaderContainer .controlPanel .mute_btn {
+    display: none;
+  }
+  main .videoContainer video {
+    display: none;
+  }
+  main .videoContainer .character {
+    width: 50%;
+    height: auto;
+  }
+  main .videoContainer {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  main .videoContainer a {
+    z-index: 1;
+    height: 30%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px rgb(255, 0, 0);
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer a .container h2 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    transition: all 0.3s ease;
+  }
+  main .videoContainer .blackBar {
+    display: none;
+  }
+  .about {
+    scroll-snap-align: center;
+    height: 100dvh;
+    z-index: 1;
+    padding-top: 10dvh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #000000;
+    align-content: center;
+    justify-items: center;
+  }
+  .about .eastcoast {
+    display: none;
+  }
+  .about .westcoast {
+    display: none;
+  }
+  .about .boombap {
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    border-top: 1px solid rgba(255, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.377);
+  }
+  .about .subcontentContainer h2 {
+    font-size: 2rem;
+  }
+  .about .subcontentContainer p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  footer .footerLinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .about img {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    z-index: 2;
+    height: 10dvh;
+    transform: rotate(0);
+    opacity: 0.8;
+  }
+}
