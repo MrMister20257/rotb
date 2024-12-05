@@ -5,7 +5,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10dvh;
+  height: 10vh;
   width: 100%;
   background-color: black;
   position: fixed;
@@ -71,15 +71,15 @@ header .rightHeaderContainer .controlPanel button:hover {
 /* @import 'contact_main'; */
 main {
   scroll-snap-align: center;
-  height: 100dvh;
+  height: 100vh;
   width: 100%;
-  padding-top: 10dvh;
+  padding-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main .videoContainer {
-  height: 90dvh;
+  height: 90vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -94,12 +94,12 @@ main .videoContainer video {
 }
 main .videoContainer .character {
   z-index: 1;
-  height: 90dvh;
+  height: 90vh;
   opacity: 1;
 }
 main .videoContainer a {
   z-index: 1;
-  height: 15dvh;
+  height: 15vh;
   width: 25rem;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -136,7 +136,7 @@ main .videoContainer a:hover h2 {
   text-shadow: 2px 2px 4px black;
 }
 main .videoContainer .blackBar {
-  height: 10dvh;
+  height: 10vh;
   width: 100%;
   background-color: black;
   position: absolute;
@@ -145,9 +145,9 @@ main .videoContainer .blackBar {
 
 .about {
   scroll-snap-align: center;
-  height: 100dvh;
+  height: 100vh;
   z-index: 1;
-  padding-top: 10dvh;
+  padding-top: 10vh;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
@@ -161,7 +161,7 @@ main .videoContainer .blackBar {
   grid-row-start: 9;
   grid-row-end: 10;
   z-index: 2;
-  height: 15dvh;
+  height: 15vh;
   transform: rotate(0);
   opacity: 0.8;
 }
@@ -215,7 +215,7 @@ main .videoContainer .blackBar {
 }
 
 footer {
-  height: 12dvh;
+  height: 12vh;
   width: 100%;
   z-index: 1;
   transform: rotate(0deg);
@@ -227,7 +227,7 @@ footer {
   color: white;
   font-family: "Nunito Sans";
   position: absolute;
-  bottom: -100dvh;
+  bottom: -100vh;
   cursor: default;
 }
 footer .footerLinkContainer {
@@ -263,7 +263,7 @@ footer a:hover {
 }
 
 body {
-  height: 100dvh;
+  height: 100vh;
   background-color: rgb(0, 0, 0);
   display: none;
 }
@@ -303,7 +303,7 @@ body {
     height: auto;
   }
   main .videoContainer {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -329,13 +329,13 @@ body {
     transition: all 0.3s ease;
   }
   main .videoContainer .blackBar {
-    height: 25dvh;
+    height: 25vh;
   }
   .about {
     scroll-snap-align: center;
-    height: 100dvh;
+    height: 100vh;
     z-index: 1;
-    padding-top: 10dvh;
+    padding-top: 10vh;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -389,7 +389,7 @@ body {
     grid-row-start: 8;
     grid-row-end: 10;
     z-index: 2;
-    height: 20dvh;
+    height: 20vh;
     transform: rotate(0);
     opacity: 0.8;
   }
@@ -414,7 +414,7 @@ body {
     height: auto;
   }
   main .videoContainer {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -440,13 +440,13 @@ body {
     transition: all 0.3s ease;
   }
   main .videoContainer .blackBar {
-    height: 25dvh;
+    height: 25vh;
   }
   .about {
     scroll-snap-align: center;
-    height: 100dvh;
+    height: 100vh;
     z-index: 1;
-    padding-top: 10dvh;
+    padding-top: 10vh;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -501,7 +501,7 @@ body {
     grid-row-start: 7;
     grid-row-end: 9;
     z-index: 2;
-    height: 20dvh;
+    height: 20vh;
     transform: rotate(0);
     opacity: 0.8;
   }
@@ -526,7 +526,7 @@ body {
     height: auto;
   }
   main .videoContainer {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -552,13 +552,13 @@ body {
     transition: all 0.3s ease;
   }
   main .videoContainer .blackBar {
-    height: 25dvh;
+    height: 25vh;
   }
   .about {
     scroll-snap-align: center;
-    height: 100dvh;
+    height: 100vh;
     z-index: 1;
-    padding-top: 10dvh;
+    padding-top: 10vh;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -613,7 +613,7 @@ body {
     grid-row-start: 9;
     grid-row-end: 10;
     z-index: 2;
-    height: 10dvh;
+    height: 10vh;
     transform: rotate(0);
     opacity: 0.8;
   }
@@ -638,7 +638,7 @@ body {
     height: auto;
   }
   main .videoContainer {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -702,7 +702,7 @@ body {
     grid-row-start: 9;
     grid-row-end: 10;
     z-index: 2;
-    height: 10dvh;
+    height: 10vh;
     transform: rotate(0);
     opacity: 0.8;
   }
@@ -727,7 +727,7 @@ body {
     height: auto;
   }
   main .videoContainer {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -757,9 +757,9 @@ body {
   }
   .about {
     scroll-snap-align: center;
-    height: 100dvh;
+    height: 100vh;
     z-index: 1;
-    padding-top: 10dvh;
+    padding-top: 10vh;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -803,7 +803,7 @@ body {
     grid-row-start: 9;
     grid-row-end: 10;
     z-index: 2;
-    height: 10dvh;
+    height: 10vh;
     transform: rotate(0);
     opacity: 0.8;
   }
@@ -828,7 +828,7 @@ body {
     height: auto;
   }
   main .videoContainer {
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -858,9 +858,9 @@ body {
   }
   .about {
     scroll-snap-align: center;
-    height: 100dvh;
+    height: 100vh;
     z-index: 1;
-    padding-top: 10dvh;
+    padding-top: 10vh;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -904,7 +904,7 @@ body {
     grid-row-start: 9;
     grid-row-end: 10;
     z-index: 2;
-    height: 10dvh;
+    height: 10vh;
     transform: rotate(0);
     opacity: 0.8;
   }

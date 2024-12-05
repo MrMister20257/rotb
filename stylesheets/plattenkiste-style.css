@@ -14,7 +14,7 @@
 }
 
 body {
-  height: 100dvh;
+  height: 100vh;
   background-color: rgb(0, 0, 0);
   display: none;
 }
@@ -24,7 +24,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10dvh;
+  height: 10vh;
   width: 100%;
   background-color: black;
   position: fixed;
@@ -100,7 +100,7 @@ main {
   background-position: center;
 }
 main .filterContainer {
-  height: 100dvh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,11 +169,11 @@ main .filterContainer .albumCover img {
   box-shadow: 0px 0px 8px red;
 }
 main .filterContainer .audioContainer {
-  height: 5dvh;
+  height: 5vh;
 }
 
 footer {
-  height: 12dvh;
+  height: 12vh;
   width: 100%;
   z-index: 1;
   transform: rotate(0deg);
@@ -220,7 +220,7 @@ footer a:hover {
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
   body {
-    height: 100dvh;
+    height: 100vh;
     background-color: rgb(0, 0, 0);
     display: none;
   }
@@ -230,7 +230,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10dvh;
+    height: 10vh;
     width: 100%;
     background-color: black;
     position: fixed;
@@ -307,7 +307,7 @@ footer a:hover {
     background-position: center;
   }
   main .filterContainer {
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -376,11 +376,11 @@ footer a:hover {
     box-shadow: 0px 0px 8px red;
   }
   main .filterContainer .audioContainer {
-    height: 5dvh;
+    height: 5vh;
   }
   
   footer {
-    height: 12dvh;
+    height: 12vh;
     width: 100%;
     z-index: 1;
     transform: rotate(0deg);
@@ -421,7 +421,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10dvh;
+    height: 10vh;
     width: 100%;
     background-color: black;
     position: fixed;
@@ -494,13 +494,13 @@ footer a:hover {
   }
   
   main {
-    height: 100dvh;
+    height: 100vh;
     background: url(/pictures/street-art-977790_1920.avif);
     background-position: center;
   }
   main .filterContainer {
     height: 100%;
-    padding-top: 15dvh;
+    padding-top: 15vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -577,13 +577,13 @@ footer a:hover {
     box-shadow: 0px 0px 8px red;
   }
   main .filterContainer .audioContainer {
-    height: 5dvh;
+    height: 5vh;
     display: inline;
     padding-bottom: 200px;
   }
   
   footer {
-    height: 12dvh;
+    height: 12vh;
     width: 100%;
     z-index: 1;
     transform: rotate(0deg);
@@ -624,7 +624,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10dvh;
+    height: 10vh;
     width: 100%;
     background-color: black;
     position: fixed;
@@ -697,13 +697,13 @@ footer a:hover {
   }
   
   main {
-    height: 100dvh;
+    height: 100vh;
     background: url(/pictures/street-art-977790_1920.avif);
     background-position: center;
   }
   main .filterContainer {
     height: 100%;
-    padding-top: 15dvh;
+    padding-top: 15vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -780,13 +780,13 @@ footer a:hover {
     box-shadow: 0px 0px 8px red;
   }
   main .filterContainer .audioContainer {
-    height: 5dvh;
+    height: 5vh;
     display: inline;
     padding-bottom: 200px;
   }
   
   footer {
-    height: 12dvh;
+    height: 12vh;
     width: 100%;
     z-index: 1;
     transform: rotate(0deg);
@@ -827,7 +827,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10dvh;
+    height: 10vh;
     width: 100%;
     background-color: black;
     position: fixed;
@@ -900,13 +900,13 @@ footer a:hover {
   }
   
   main {
-    height: 100dvh;
+    height: 100vh;
     background: url(/pictures/street-art-977790_1920.avif);
     background-position: center;
   }
   main .filterContainer {
     height: 100%;
-    padding-top: 15dvh;
+    padding-top: 15vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -983,12 +983,12 @@ footer a:hover {
     box-shadow: 0px 0px 8px red;
   }
   main .filterContainer .audioContainer {
-    height: 5dvh;
+    height: 5vh;
     display: none;
   }
   
   footer {
-    height: 12dvh;
+    height: 12vh;
     width: 100%;
     z-index: 1;
     transform: rotate(0deg);
@@ -1029,7 +1029,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10dvh;
+    height: 10vh;
     width: 100%;
     background-color: black;
     position: fixed;
@@ -1102,13 +1102,13 @@ footer a:hover {
   }
   
   main {
-    height: 100dvh;
+    height: 100vh;
     background: url(/pictures/street-art-977790_1920.avif);
     background-position: center;
   }
   main .filterContainer {
     height: 100%;
-    padding-top: 15dvh;
+    padding-top: 15vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1185,12 +1185,12 @@ footer a:hover {
     box-shadow: 0px 0px 8px red;
   }
   main .filterContainer .audioContainer {
-    height: 5dvh;
+    height: 5vh;
     display: none;
   }
   
   footer {
-    height: 12dvh;
+    height: 12vh;
     width: 100%;
     z-index: 1;
     transform: rotate(0deg);
@@ -1231,7 +1231,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10dvh;
+    height: 10vh;
     width: 100%;
     background-color: black;
     position: fixed;
@@ -1304,13 +1304,13 @@ footer a:hover {
   }
   
   main {
-    height: 100dvh;
+    height: 100vh;
     background: url(/pictures/street-art-977790_1920.avif);
     background-position: center;
   }
   main .filterContainer {
     height: 100%;
-    padding-top: 15dvh;
+    padding-top: 15vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1387,12 +1387,12 @@ footer a:hover {
     box-shadow: 0px 0px 8px red;
   }
   main .filterContainer .audioContainer {
-    height: 5dvh;
+    height: 5vh;
     display: none;
   }
   
   footer {
-    height: 12dvh;
+    height: 12vh;
     width: 100%;
     z-index: 1;
     transform: rotate(0deg);
